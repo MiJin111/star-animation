@@ -1,5 +1,5 @@
-const count     = 270;
-const blurCount = 70;
+const count     = 220;
+const blurCount = 60;
 
 const stage = document.querySelector(".stage");
 
@@ -49,15 +49,15 @@ function makeLight(i) {
         })
 
         tl.to(span, {
-        y: gsap.utils.random(-80, 80),
-        x: gsap.utils.random(-80, 80),
+        y: gsap.utils.random(-20, 20),
+        x: gsap.utils.random(-20, 20),
         duration: gsap.utils.random(4, 2, 2),
         ease: Power0.easeNone
         }, -0.3)
 
         tl.to(span, {
-        opacity:   0,
-        duration: .8
+        opacity:   0.2,
+        duration: .4
         }, ">-0.8")
         
         tl.play();
@@ -65,12 +65,12 @@ function makeLight(i) {
     } else {
         tl.to(span, {
         opacity: gsap.utils.random(1, 1),
-        duration: .3
+        duration: .2
         })
 
         tl.to(span, {
-        x: gsap.utils.random(-100, 100),
-        y: gsap.utils.random(-100, 100),
+        x: gsap.utils.random(-20, 20),
+        y: gsap.utils.random(-20, 20),
         duration: gsap.utils.random(4, 2, 5),
         ease: Power0.easeNone
         }, -0.3)
