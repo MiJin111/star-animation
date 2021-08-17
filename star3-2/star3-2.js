@@ -3,8 +3,8 @@
 https://diary-blog.github.io/glow-light/
 */
 
-const count     = 350;
-const blurCount = 150;
+const count     = 270;
+const blurCount = 70;
 
 const stage = document.querySelector(".stage");
 
